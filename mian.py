@@ -26,3 +26,7 @@ password_input.send_keys(password)
 # clicking subbmit button
 submit_button=wait.until(EC.element_to_be_clickable((By.ID,"submit-button")))
 submit_button.click()
+day_filter_button=wait.until(EC.element_to_be_clickable((By.ID,"day-filter")))
+day_filter_button.click()
+todat_option=wait.until(EC.element_to_be_clickable((By.XPATH,'//*[@id="day-filter"]/option[2]')))
+todat_option.click()
